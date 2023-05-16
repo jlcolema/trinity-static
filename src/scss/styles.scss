@@ -8,20 +8,15 @@
 @import "common/baseline.scss";
 @import "common/utilities.scss";
 
-/* Themes
-------------------------------*/
-
-@import "themes/light.scss";
-@import "themes/dark.scss";
-
-/* Common
+/* Layouts
 ------------------------------*/
 
 @import "layouts/header.scss";
 @import "layouts/main.scss";
 @import "layouts/footer.scss";
 
-/* Components
+/* Themes
 ------------------------------*/
 
-@import "components/section.scss";
+@import "themes/light.scss";
+@import "themes/dark.scss";
