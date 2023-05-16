@@ -70,6 +70,7 @@ gulp.task('js', function() {
 		// Plugins
 
 		// basePaths.src + 'js/plugins/name-of-plugin.js',
+		basePaths.src + 'js/glide/glide.js',
 
 		// Functions
 
