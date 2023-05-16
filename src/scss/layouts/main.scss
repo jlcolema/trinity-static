@@ -48,6 +48,7 @@
 						height: calc(100% + 1.875rem);
 						background: var(--color-branding-primary);
 						transform: translateX(-50vw);
+						clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
 						z-index: -1;
 					}
 
