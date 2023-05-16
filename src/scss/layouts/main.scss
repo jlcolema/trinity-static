@@ -211,7 +211,9 @@
 					overflow: hidden;
 				}
 
-					.together__image {}
+					.together__image {
+						background: var(--color-theme-salmon);
+					}
 
 					.together__detail {
 						padding: 1.5625rem 1rem 1.375rem 1rem; // 25px 16px 22px 16px
