@@ -88,10 +88,34 @@
 							text-transform: uppercase;
 						}
 
-					ul {}
+					ul {
+						padding: 0;
+						list-style: none;
+					}
 
 						li {
-							list-style-image: url(/assets/img/checkmark.png);
+
+							position: relative;
+							padding: 0 0 0 1.4375rem; // 0 0 0 23px
+
+							&::before {
+
+								content: "";
+								position: absolute;
+								left: 0;
+								top: 0.3125rem; // 5px
+								width: 17px;
+								height: 13px;
+								background-image: url(/assets/img/checkmark.png);
+								z-index: 1;
+
+								@media (min-resolution: 2dppx) {
+									background-image: url(/assets/img/checkmark@2x.png);
+									background-size: 17px 13px;
+								}
+
+							}
+
 						}
 
 				}
