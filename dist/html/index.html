@@ -12,16 +12,16 @@
 
 		<meta name="description" content="In a free consultation discussion with our CEO, Craig Smith, you will receive a live website review, complete with our toolsets, to help you understand what digital growth opportunities exist in your business." />
 
-		<link rel="home" href="http://localhost:3000" />
-		<link rel="canonical" href="http://localhost:3000" />
+		<link rel="home" href="https://trinity-landing-page.netlify.app" />
+		<link rel="canonical" href="https://trinity-landing-page.netlify.app" />
 
-		<meta name="theme-color" content="#454545" />
+		<meta name="theme-color" content="#2d394a" />
 
 		<link rel="icon" href="/favicon.ico" sizes="any" />
 		<link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml" />
 		<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
 
-		<link rel="manifest" href="/manifest.json" />
+		<!-- <link rel="manifest" href="/manifest.json" /> -->
 
 		<!-- Facebook -->
 
@@ -57,7 +57,7 @@
 
 	<body id="" class="">
 
-		<a href="#main" class="skip-link">Skip to main content.</a>
+		<a href="#main" class="skip-link screen-reader-only">Skip to main content.</a>
 
 		<header role="banner" id="header" class="header">
 
@@ -65,11 +65,15 @@
 
 				<div class="logo" aria-label="Home">
 
-					<a href="#" aria-current="page" data-current="true" class="logo__link">Trinity</a>
+					<a href="/" aria-current="page" data-current="true" class="logo__link">
+
+						<img src="/assets/img/logo.png" srcset="/assets/img/logo.png, /assets/img/logo@2x.png 2x" width="215" height="50" alt="Trinity Insight" class="logo__image" />
+
+					</a>
 
 				</div>
 
-				<p class="call-us">Give us a call! <b class="">866-535-8807</b></p>
+				<p class="call-us">Give us a call! <a href="tel:1-866-535-8807" class="call-us__link">866-535-8807</a></p>
 
 			</div>
 
@@ -79,11 +83,15 @@
 
 			<div class="wrap main__wrap">
 
-				<section class="">
+				<section class="section section__overview">
 
-					<h1 class="">Gain new insight to grow digital revenues faster.</h1>
+					<header class="section__header">
 
-					<p class="">Sign up for your <b class="">free</b> Website Strategy Session ($795 value)</p>
+						<h1 class="section__heading">Gain new insight to grow digital revenues faster.</h1>
+
+						<p class="section__description">Sign up for your <b class="">free</b> Website Strategy Session ($795 value)</p>
+
+					</header>
 
 					<div class="">
 
@@ -109,57 +117,57 @@
 
 					</div>
 
-					<form name="strategy" method="Post" data-netlify="true" class="">
+					<form name="strategy" method="post" data-netlify="true" class="form">
 
-						<legend class=""><b class="">Free</b> Website Strategy Session</legend>
+						<legend class="form__heading"><b class="">Free</b> Website Strategy Session</legend>
 
-						<fieldset class="">
+						<fieldset class="form__fieldset">
 
-							<ol class="">
+							<ol class="form__list">
 
-								<li class="">
+								<li class="form__item">
 
-									<label for="first-name" class="">First Name</label>
+									<label for="first-name" class="form__label">First Name</label>
 
-									<input type="text" name="first-name" value="" id="first-name" class="" />
-
-								</li>
-
-								<li class="">
-
-									<label for="last-name" class="">Last Name</label>
-
-									<input type="text" name="last-name" value="" id="last-name" class="" />
+									<input type="text" name="first-name" value="" id="first-name" class="form__input" />
 
 								</li>
 
-								<li class="">
+								<li class="form__item">
 
-									<label for="website" class="">Website</label>
+									<label for="last-name" class="form__label">Last Name</label>
 
-									<input type="text" name="website" value="" id="website" class="" />
-
-								</li>
-
-								<li class="">
-
-									<label for="email" class="">Email *</label>
-
-									<input type="email" name="email" value="" id="email" class="" required />
+									<input type="text" name="last-name" value="" id="last-name" class="form__input" />
 
 								</li>
 
-								<li class="">
+								<li class="form__item">
 
-									<label for="phone-number" class="">Phone Number</label>
+									<label for="website" class="form__label">Website</label>
 
-									<input type="tel" name="phone-number" value="" id="phone-number" class="" required />
+									<input type="text" name="website" value="" id="website" class="form__input" />
+
+								</li>
+
+								<li class="form__item">
+
+									<label for="email" class="form__label">Email *</label>
+
+									<input type="email" name="email" value="" id="email" class="form__input" required />
+
+								</li>
+
+								<li class="form__item">
+
+									<label for="phone-number" class="form__label">Phone Number</label>
+
+									<input type="tel" name="phone-number" value="" id="phone-number" class="form__input" />
 
 								</li>
 
 							</ol>
 
-							<button type="submit" name="" class="">Request Session</button>
+							<button type="submit" class="form__button">Request Session</button>
 
 						</fieldset>
 
@@ -167,33 +175,57 @@
 
 				</section>
 
-				<section class="">
+				<section class="section section__together">
 
-					<h2 class="">We make working together easy.</h2>
+					<header class="section__header">
 
-					<ol class="">
+						<h2 class="section__heading">We make working together easy.</h2>
 
-						<li class="">
+					</header>
 
-							1. 30 Minute Video Conversation
+					<ol class="together__list">
 
-							<p class="">Get started with a free consultation to help us understand where our team can best help you build and grow your online business.</p>
+						<!-- TODO: Images need to be resized to 424px wide at 100% -->
+
+						<li class="together__item">
+
+							<img src="/media/image.jpg" srcset="/media/image.jpg, /media/image@2x.jpg 2x" width="424" height="130" alt="" loading="lazy" class="together__image" />
+
+							<div class="together__detail">
+
+								<h3 class="together__heading">30 Minute Video Conversation</h3>
+
+								<p class="together__description">Get started with a free consultation to help us understand where our team can best help you build and grow your online business.</p>
+
+							</div>
 
 						</li>
 
-						<li class="">
+						<li class="together__item">
 
-							2. Diagnostic Roadmap
+							<img src="/media/image.jpg" srcset="/media/image.jpg, /media/image@2x.jpg 2x" width="424" height="130" alt="" loading="lazy" class="together__image" />
 
-							<p class="">Within a week we'll diagnose your biggest opportunities and build a custom roadmap to optimize your ecommerce experience.</p>
+							<div class="together__detail">
+
+								<h3 class="together__heading">Diagnostic Roadmap</h3>
+
+								<p class="together__description">Within a week we'll diagnose your biggest opportunities and build a custom roadmap to optimize your ecommerce experience.</p>
+
+							</div>
 
 						</li>
 
-						<li class="">
+						<li class="together__item">
 
-							3. Growth Services
+							<img src="/media/image.jpg" srcset="/media/image.jpg, /media/image@2x.jpg 2x" width="424" height="130" alt="" loading="lazy" class="together__image" />
 
-							<p class="">Our team will start immediately taking action to make improvements and deliver a brand experience that drives lifetime value.</p>
+							<div class="together__detail">
+
+								<h3 class="together__heading">Growth Services</h3>
+
+								<p class="together__description">Our team will start immediately taking action to make improvements and deliver a brand experience that drives lifetime value.</p>
+
+							</div>
 
 						</li>
 
@@ -201,61 +233,85 @@
 
 				</section>
 
-				<section class="section">
+				<section class="section section__trusted">
 
-					<h3 class="">Trusted By:</h3>
+					<header class="section__header">
 
-					<ul class="">
+						<h3 class="section__heading">Trusted By:</h3>
 
-						<li class="">
+					</header>
 
-							<a href="#" class="">Logo One</a>
+					<div class="carousel__container">
 
-						</li>
+						<div class="glide hero">
 
-						<li class="">
+							<div class="glide__track" data-glide-el="track">
 
-							<a href="#" class="">Logo Two</a>
+								<ul class="trusted__list glide__slides">
 
-						</li>
+									<li class="trusted__item glide__slide">
 
-						<li class="">
+										<img src="/media/logo.png" srcset="/media/logo.png, /media/logo@2x.png" width="368" height="196" alt="" loading="lazy" class="trusted__logo" />
 
-							<a href="#" class="">Logo Three</a>
+									</li>
 
-						</li>
+									<li class="trusted__item glide__slide">
 
-						<li class="">
+										<img src="/media/logo.png" srcset="/media/logo.png, /media/logo@2x.png" width="368" height="196" alt="" loading="lazy" class="trusted__logo" />
 
-							<a href="#" class="">Logo Four</a>
+									</li>
 
-						</li>
+									<li class="trusted__item glide__slide">
 
-						<li class="">
+										<img src="/media/logo.png" srcset="/media/logo.png, /media/logo@2x.png" width="368" height="196" alt="" loading="lazy" class="trusted__logo" />
 
-							<a href="#" class="">Logo Five</a>
+									</li>
 
-						</li>
+									<li class="trusted__item glide__slide">
 
-						<li class="">
+										<img src="/media/logo.png" srcset="/media/logo.png, /media/logo@2x.png" width="368" height="196" alt="" loading="lazy" class="trusted__logo" />
 
-							<a href="#" class="">Logo Six</a>
+									</li>
 
-						</li>
+									<li class="trusted__item glide__slide">
 
-						<li class="">
+										<img src="/media/logo.png" srcset="/media/logo.png, /media/logo@2x.png" width="368" height="196" alt="" loading="lazy" class="trusted__logo" />
 
-							<a href="#" class="">Logo Seven</a>
+									</li>
 
-						</li>
+									<li class="trusted__item glide__slide">
 
-						<li class="">
+										<img src="/media/logo.png" srcset="/media/logo.png, /media/logo@2x.png" width="368" height="196" alt="" loading="lazy" class="trusted__logo" />
 
-							<a href="#" class="">Logo Eight</a>
+									</li>
 
-						</li>
+									<li class="trusted__item glide__slide">
 
-					</ul>
+										<img src="/media/logo.png" srcset="/media/logo.png, /media/logo@2x.png" width="368" height="196" alt="" loading="lazy" class="trusted__logo" />
+
+									</li>
+
+									<li class="trusted__item glide__slide">
+
+										<img src="/media/logo.png" srcset="/media/logo.png, /media/logo@2x.png" width="368" height="196" alt="" loading="lazy" class="trusted__logo" />
+
+									</li>
+
+								</ul>
+
+							</div>
+
+							<div class="glide__arrows" data-glide-el="controls">
+
+								<button class="glide__arrow glide__arrow--prev" data-glide-dir="<">prev</button>
+
+								<button class="glide__arrow glide__arrow--next" data-glide-dir=">">next</button>
+
+							</div>
+
+						</div>
+
+					</div>
 
 				</section>
 
@@ -267,47 +323,23 @@
 
 			<div class="wrap footer__wrap">
 
-				<div class="logo">
+				<div class="emblem" aria-label="Home">
 
-					<a href="logo__link">Trinity</a>
+					<a href="/" aria-current="page" data-current="true" class="emblem__link">
+
+						<img src="/assets/img/emblem.png" srcset="/assets/img/emblem.png, /assets/img/emblem@2x.png 2x" width="40" height="46" alt="Trinity Insight" class="emblem__image" />
+
+					</a>
 
 				</div>
 
-				<p class="copyright">&copy; 2020 Trinity Insight, LLC. All Rights Reserved.</p>
+				<p class="copyright">&copy; 2023 Trinity Insight, LLC. All Rights Reserved.</p>
 
 			</div>
 
 		</footer>
 
-		<a href="#main" class="skip-link">Return to main content.</a>
-
-		<script src="/assets/js/scripts.js" defer="defer"></script>
-
-		<script>
-
-			<!--
-
-				// Register our service-worker
-
-				if (navigator.serviceWorker) {
-
-					window.addEventListener('load', function() {
-
-						navigator.serviceWorker.register('/service-worker.js', {
-							scope: '/'
-						});
-
-						if (navigator.serviceWorker.controller) {
-							navigator.serviceWorker.controller.postMessage({'command': 'trimCaches'});
-						}
-
-					});
-
-				}
-
-			//-->
-
-		</script>
+		<script src="/assets/js/scripts.js" defer></script>
 
 	</body>
 
