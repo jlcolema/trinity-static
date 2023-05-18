@@ -601,12 +601,18 @@
 					}
 
 						.glide__bullet {
+
 							width: 0.625rem; // 10px
 							height: 0.625rem; // 10px
 							padding: 0;
 							background-color: transparent;
 							border: 0.0625rem solid var(--color-theme-light-blue);
 							border-radius: 50%;
+
+							&:nth-child(even) {
+								display: none;
+							}
+
 						}
 
 						.glide__bullet--active {
