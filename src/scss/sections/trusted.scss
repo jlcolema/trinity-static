@@ -42,9 +42,12 @@
 	.carousel__container {
 
 		width: 100%;
-		// background: pink;
+		max-width: 27.5rem; // 440px;
+		margin-inline: auto;
+		padding: 0 1rem;
 
-		@media (min-width: 56.25rem) {
+		@media (min-width: 43.8125rem) {
+			max-width: none;
 			margin-inline: auto;
 			padding: 0 120px;
 		}
@@ -128,7 +131,7 @@
 				// background: yellow;
 				z-index: 1;
 
-				@media (min-width: 56.25rem) {
+				@media (min-width: 43.8125rem) {
 					display: flex;
 				}
 
@@ -174,7 +177,7 @@
 				-ms-user-select:none;
 				user-select:none;
 
-				@media (min-width: 56.25rem) {
+				@media (min-width: 43.8125rem) {
 					display: none;
 				}
 
