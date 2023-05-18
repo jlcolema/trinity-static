@@ -235,13 +235,14 @@
 
 				.form {
 
-					padding: 3.25rem 3rem 3rem 3rem; // 52px 48px 48px 48px
+					padding: 2rem 1rem 2rem 1rem; // 32px 1rem 32px 1rem
 					border-radius: 0.4375rem; // 7px
 					box-shadow: 0 0.625rem 1.25rem 0 rgba(0, 0, 0, 0.20); // 0 10px 20px 0
 					background: var(--color-monotone-white);
 
 					@media (min-width: 56.25rem) {
 						margin: 0 0 0 1.875rem; // 0 0 0 30px;
+						padding: 3.25rem 3rem 3rem 3rem; // 52px 48px 48px 48px
 					}
 
 				}
@@ -249,17 +250,32 @@
 					.form__heading {
 
 						width: 100%;
-						margin: 0 0 2.75rem 0; // 0 0 44px 0
+						margin: 0 0 1.0625rem 0; // 0 0 17px 0
+						font-size: 1.375rem; // 22px
+						line-height: 1.3636363636; // 30px
 						text-align: center;
 
+						@media (min-width: 56.25rem) {
+							margin: 0 0 2.75rem 0; // 0 0 44px 0
+							font-size: 2.25rem; // 36px
+							line-height: 1.3333333333; // 48px
+						}
+
 						b {
+
 							display: block;
-							font-size: 1.375rem; // 22px
-							line-height: 1.3181818182; // 29px
+							font-size: 1.125rem; // 18px
+							line-height: 1.4444444444; // 26px
 							font-family: var(--font-family-body);
 							letter-spacing: 0.239375rem; // 3.83px
 							text-transform: uppercase;
 							color: var(--color-branding-accent);
+
+							@media (min-width: 56.25rem) {
+								font-size: 1.375rem; // 22px
+								line-height: 1.3181818182; // 29px
+							}
+
 						}
 
 					}
@@ -273,7 +289,13 @@
 						}
 
 							.form__item {
+
 								margin: 0 0 1.375rem 0; // 0 0 22px 0
+
+								&:last-of-type {
+									margin: 0;
+								}
+
 							}
 
 								.form__label {}
@@ -281,19 +303,29 @@
 								.form__input {}
 
 						.form__button {
+
 							display: flex;
 							justify-content: center;
-							margin: 1.9375rem 0 0 0; // 31px 0 0 0
+							margin: 1rem 0 0 0; // 16px 0 0 0
+
+							@media (min-width: 56.25rem) {
+								margin: 1.9375rem 0 0 0; // 31px 0 0 0
+							}
+
 						}
 
 		// Section: Together
 
 		.section__together {
 
-			margin: 4.875rem 0 0 0; // 78px
+			margin: 2rem 0 0 0; // 32px
 			padding: 3.0625rem 0 0 0; // 49px
 			border-top: 0.0625rem solid var(--color-theme-light-blue);
 			// background-color: var(--color-construction-tertiary);
+
+			@media (min-width: 56.25rem) {
+				margin: 4.875rem 0 0 0; // 78px
+			}
 
 			.section__header {
 				margin: 0 0 2.75rem 0; // 44px
