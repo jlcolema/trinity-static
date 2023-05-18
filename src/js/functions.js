@@ -1,22 +1,24 @@
 // Glide
 
 var glideHero = new Glide('.hero', {
+
 	perView: 5,
 	gap: 35,
 	breakpoints: {
 		1100: {
-		perView: 4
+			perView: 4
 		},
 		900: {
-		perView: 3
+			perView: 3
 		},
 		700: {
-		perView: 2
+			perView: 2
 		}
 	}
-	});
 
-	glideHero.mount();
+});
+
+glideHero.mount();
 
 // Service Worker
 

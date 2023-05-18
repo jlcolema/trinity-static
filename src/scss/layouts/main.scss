@@ -406,11 +406,15 @@
 		}
 
 			.carousel__container {
+
 				width: 100%;
-				// max-width: 1264px;
-				margin-inline: auto;
-				padding: 0 120px;
 				// background: pink;
+
+				@media (min-width: 56.25rem) {
+					margin-inline: auto;
+					padding: 0 120px;
+				}
+
 			}
 
 				.glide {
@@ -476,11 +480,12 @@
 								.trusted__logo {}
 
 					.glide__arrows {
+
+						display: none;
 						position: absolute;
 						left: -120px;
 						top: 0;
 						right: -120px;
-						display: flex;
 						justify-content: space-between;
 						align-items: center;
 						bottom: 0;
@@ -488,6 +493,11 @@
 						user-select: none;
 						// background: yellow;
 						z-index: 1;
+
+						@media (min-width: 56.25rem) {
+							display: flex;
+						}
+
 					}
 
 						.glide__arrow {
@@ -516,4 +526,35 @@
 
 						.glide__arrow--next {
 							right: -120px;
+						}
+
+					.glide__bullets {
+
+						display: flex;
+						justify-content: center;
+						gap: 0.4375rem; // 7px
+						margin: 1rem 0 0 0; // 16px 0 0 0
+						-webkit-touch-callout:none;
+						-webkit-user-select:none;
+						-moz-user-select:none;
+						-ms-user-select:none;
+						user-select:none;
+
+						@media (min-width: 56.25rem) {
+							display: none;
+						}
+
+					}
+
+						.glide__bullet {
+							width: 0.625rem; // 10px
+							height: 0.625rem; // 10px
+							padding: 0;
+							background-color: transparent;
+							border: 0.0625rem solid var(--color-theme-light-blue);
+							border-radius: 50%;
+						}
+
+						.glide__bullet--active {
+							background-color: var(--color-theme-light-blue);
 						}
