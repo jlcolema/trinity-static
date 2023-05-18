@@ -174,13 +174,8 @@
 								top: 0.3125rem; // 5px
 								width: 17px;
 								height: 13px;
-								background-image: url(/assets/img/checkmark.png);
+								background-image: url(/assets/img/checkmark.svg);
 								z-index: 1;
-
-								@media (min-resolution: 2dppx) {
-									background-image: url(/assets/img/checkmark@2x.png);
-									background-size: 17px 13px;
-								}
 
 							}
 
