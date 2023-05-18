@@ -4,7 +4,7 @@
 
 // Notes...
 
-.screen-reader-only {
+.skip-link {
 
 	&:not(:focus):not(:active) {
 		position: absolute;
@@ -15,6 +15,20 @@
 		white-space: nowrap;
 		overflow: hidden;
 	}
+
+	&:focus,
+	&:focus-visible {
+		position: fixed;
+		left: 0.5rem;
+		top: 0.5rem;
+		padding: 0.5rem;
+		background-color: var(--color-monotone-white);
+		border: 0.125rem solid var(--color-branding-primary);
+		box-shadow: 0 0.625rem 1.25rem 0 rgba(0, 0, 0, 0.20); // 0 10px 20px 0
+		text-decoration: none;
+		z-index: 999;
+	}
+
 }
 
 .visually-hidden {
@@ -48,7 +62,7 @@
 	// line-height: 14px;
 	// font-family: Helvetica, Arials, sans-serif;
 	// text-transform: uppercase;
-	// color: var(--color-white);
+	// color: var(--color-monotone-white);
 	// background: hsl(267, 100%, 85%);
 	// z-index: 9999;
 }
